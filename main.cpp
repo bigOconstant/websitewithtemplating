@@ -17,6 +17,13 @@ int main(){
     Template temp = env.parse_template("site/index.html");
 
     env.write(temp, data, "./outputsite/index.html");
+
+    data["views"]["home"] = false;
+    data["views"]["about"] = true;
+    data["cssdir"] = "../css";
+    data["jsdir"] = "../js";
+    temp = env.parse_template("site/views/about.html");
+    env.write(temp, data, "./outputsite/views/about.html");
     cout<<"works!"<<endl;
 
    

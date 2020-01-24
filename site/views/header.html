@@ -1,19 +1,20 @@
-<div class="topnav" id="myTopnav">
-  <a class="home active" href="javascript:navSwitch('home')" >Home</a>
-  <a class="projects" href="javascript:navSwitch('projects')">Projects</a>
-  <!-- <div class="dropdown">
-    <button class="dropbtn">Dropdown 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </div>  -->
-  <a class="about" href="views/about">About</a>
-  <a class="blog" href="javascript:navSwitch('blog')">Blog</a>
-  <a class="contact" href="javascript:navSwitch('contact')">Contact</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="dropDownNav()">&#9776;</a>
-  
-</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Caleb McCarthy</title>
+        <link rel="stylesheet" href="{{cssdir}}/style.css">
+        <link rel="stylesheet" href="{{cssdir}}/header.css">
+        <script src="{{jsdir}}/script.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8"/>
+        
+    </head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a class="home {% if views.home %} active {% endif %}" href="../index.html" >Home</a>
+            <a class="projects {% if views.projects %} active {% endif %}" href="projects.html">Projects</a>
+            <a class="about {% if views.about %} active {% endif %}" href="about.html" >About</a>
+            <a class="blog {% if views.blog %} active {% endif %}" href="javascript:navSwitch('blog')">Blog</a>
+            <a class="contact {% if views.contact %} active {% endif %}" href="contact.html">Contact</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="dropDownNav()">&#9776;</a>
+          </div>
