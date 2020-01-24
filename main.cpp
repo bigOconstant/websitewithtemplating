@@ -14,6 +14,7 @@ int main(){
     data["views"]["blog"] = false;
     data["views"]["projects"] = false;
     data["views"]["contact"] = false;
+    data["level"] ="views/";
     Template temp = env.parse_template("site/index.html");
 
     env.write(temp, data, "./outputsite/index.html");
@@ -22,6 +23,7 @@ int main(){
     data["views"]["about"] = true;
     data["cssdir"] = "../css";
     data["jsdir"] = "../js";
+    data["level"] ="";
     temp = env.parse_template("site/views/about.html");
     env.write(temp, data, "./outputsite/views/about.html");
     cout<<"works!"<<endl;
