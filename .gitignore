@@ -1,2 +1,3 @@
 a.out
-outputsite/*
+outputsite/views
+outputsite/index.html
