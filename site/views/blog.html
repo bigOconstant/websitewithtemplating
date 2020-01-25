@@ -1,25 +1,10 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <title>Caleb McCarthy</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <script src="../js/script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8"/>
-    </head>
+{% include "header.html" %}
+<body>
+ {% include "menu.html" %}
   <body>
-    <div class="topnav" id="myTopnav">
-      <a class="home" href="../index.html" >Home</a>
-      <a class="projects" href="projects.html">Projects</a>
-      
-      <a class="about" href="about.html" >About</a>
-      <a class="blog active" href="javascript:navSwitch('blog')">Blog</a>
-      <a class="contact" href="contact.html">Contact</a>
-      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="dropDownNav()">&#9776;</a>
-      
-    </div>
+   
 <h1 align="center"> Blog</h1>
 
 <h3 align="center" class="underline">Run Emacs in WSL</h3>
@@ -65,6 +50,6 @@ export DISPLAY=:0
 <p class="center-alighn underline"> 4. Install emacs launch it, and enjoy a full graphical version of linux emacs on windows</p>
 
 <img class="center" src="../assets/done.jpg" width=900/>
-
+{% include "footer.html" %}
   </body>
 </html>

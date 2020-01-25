@@ -25,8 +25,12 @@ int main(){
     data["jsdir"] = "../js";
     data["level"] ="";
     temp = env.parse_template("site/views/about.html");
-    env.write(temp, data, "./outputsite/views/about.html");
-    cout<<"works!"<<endl;
+    env.write(temp, data, "./outputsite/views/about.html"); 
+    data["views"]["about"] = false;
+    data["views"]["blog"] = true;
+    temp = env.parse_template("site/views/blog.html");
+    env.write(temp, data, "./outputsite/views/blog.html"); 
+    cout<<"Done generating files"<<endl;
 
    
     return 0;
