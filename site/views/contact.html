@@ -1,25 +1,10 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <title>Caleb McCarthy</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <script src="../js/script.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8"/>
-    </head>
+  {% include "header.html" %}
   <body>
-    <div class="topnav" id="myTopnav">
-        <a class="home" href="../index.html" >Home</a>
-        <a class="projects" href="projects.html" >Projects</a>
-        
-        <a class="about" href="about.html">About</a>
-        <a class="blog" href="blog.html">Blog</a>
-        <a class="contact active"  >Contact</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="dropDownNav()">&#9776;</a>
-        
-      </div>
+{% include "menu.html" %}
+
 
 <h1 align="center"> Contact</h1>
 
@@ -27,5 +12,7 @@
    <p> <a class="no_underline" href="mailto:caleb.a.mccarthy@gmail.com?Subject=Hi%20Caleb" target="_top"><label><span class="label-block">&#9993;</span></label></a>
     caleb.a.mccarthy@gmail.com</p>
 </div>
+
+{% include "footer.html" %}
 </body>
 </html>

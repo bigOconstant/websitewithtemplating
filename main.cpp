@@ -30,6 +30,19 @@ int main(){
     data["views"]["blog"] = true;
     temp = env.parse_template("site/views/blog.html");
     env.write(temp, data, "./outputsite/views/blog.html"); 
+
+
+    data["views"]["blog"] = false;
+    data["views"]["projects"] = true;
+
+    temp = env.parse_template("site/views/projects.html");
+    env.write(temp, data, "./outputsite/views/projects.html");
+
+    data["views"]["projects"] = false;
+    data["views"]["contact"] = true;
+
+    temp = env.parse_template("site/views/contact.html");
+    env.write(temp, data, "./outputsite/views/contact.html");
     cout<<"Done generating files"<<endl;
 
    
