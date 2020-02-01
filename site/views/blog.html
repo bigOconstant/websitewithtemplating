@@ -2,54 +2,62 @@
 <html>
 {% include "header.html" %}
 <body>
+<div class="content">
+
  {% include "menu.html" %}
-  <body>
+  <div class="blog-page">
    
-<h1 align="center"> Blog</h1>
+
 
 <h3 align="center" class="underline">Run Emacs in WSL</h3>
 
 
-<p class="center-alighn">  If you're like me you like emacs, but for what ever reason you need to run windows 10.This is a problem for a few reasons.</p>
+<p class="">  If you're like me you like emacs, but for what ever reason you need to run windows 10.This is a problem for a few reasons.</p>
 
-<p class="center-alighn">
+<p class="">
   1.Power Shell is still Garb. It's ugly and doesn't come with grep.
 
 </p>
 
-<img class="center" src="../assets/powershell.JPG" width=500/>
+<img  src="../assets/powershell.JPG" width=500/>
 
-<p class="center-alighn">  2.Having a terminal in Emacs is my favorite part of emacs. </p>
-<p class="center-alighn"> Getting a shell to work in emacs for windows is a pain</p>
-<img class="center" src="../assets/emacs.PNG" width=500/>
+<p class="">  2.Having a terminal in Emacs is my favorite part of emacs. </p>
+<p class=""> Getting a shell to work in emacs for windows is a pain</p>
+<img  src="../assets/emacs.PNG" width=500/>
 
 
 
-<p class="center-alighn">3. Emacs in a wsl terminal still suffers from a few quirks.</p>
-<img class="center" src="../assets/emacs-terminal.JPG" width=500/>
+<p class="">3. Emacs in a wsl terminal still suffers from a few quirks.</p>
+<img  src="../assets/emacs-terminal.JPG" width=500/>
 
 <h3 align="center">So whats the solution?</h3>
 
-<p class="center-alighn"> Install xming, set the display value in wsl and load emacs through the x server </p>
+<p class=""> Install xming, set the display value in wsl and load emacs through the x server </p>
 
-<p class="center-alighn underline"> 1. Install xming and launch it in windows</p>
-<p class="center-alighn">Xming is a x-server for windows. You can download it <a href="https://sourceforge.net/projects/xming/">here</a>.</p>
+<p  underline"> 1. Install xming and launch it in windows</p>
+<p >Xming is a x-server for windows. You can download it <a href="https://sourceforge.net/projects/xming/">here</a>.</p>
 
 <img class="center-small" src="../assets/xming.png" width=200/>
 
-<p class="center-alighn">2. In wsl install x11 utils</p>
-<pre>
+<p >2. In wsl install x11 utils</p>
+<pre >
+  <code class="bash hljs">
 sudo apt-get install x11-apps
+</code>
 </pre>
 
-<p class="center-alighn underline"> 3. In wsl set the display to 0 </p>
+<p> 3. In wsl set the display to 0 </p>
 <pre>
+  <code class="bash hljs">
 export DISPLAY=:0
+</code>
   </pre>
 
-<p class="center-alighn underline"> 4. Install emacs launch it, and enjoy a full graphical version of linux emacs on windows</p>
+<p class="" underline"> 4. Install emacs launch it, and enjoy a full graphical version of linux emacs on windows</p>
 
-<img class="center" src="../assets/done.jpg" width=900/>
+<img  src="../assets/done.jpg" width=900/>
+</div>
+
 {% include "footer.html" %}
   </body>
 </html>

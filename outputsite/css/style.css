@@ -2,6 +2,7 @@ body {
     background-color: #4a4b4c;
     font-family: Arial, Helvetica, sans-serif;
     margin:0;
+    
 }
 
 .underline{
@@ -77,28 +78,14 @@ label{
   }
 
 .center-list{
-    text-align: center;
+    max-width: 1000px;
+    text-align: left;
     color:#e0e0e0;
     font-size: 18px;
+    margin:auto;
 }
 
-pre {
-    background: #808182;
-    border: 1px solid #ddd;
-    border-left: 3px solid #1f9423;
-    color: #333131;
-    page-break-inside: avoid;
-    font-family: monospace;
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 1.6em;
-    max-width: 800px;
-    overflow: auto;
-    padding: 1em 1.5em;
-    display: block;
-    word-wrap: break-word;
-    margin: auto;
-}
+
 .project-link{
     color:#e0e0e0;
 }
@@ -106,10 +93,51 @@ pre {
     line-height: 30px;
 }
 #calebme{
-    width:100%;
-    max-width: 700px;
+   
+    max-width: 200px;
+    border-radius: 50%;
 }
 
 .center-alighn{
     text-align:center;
 }
+
+.content {
+  min-height: calc(100vh - 70px);
+  
+}
+.footer {
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+  height: 50px;
+}
+
+.blog-page{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.normal-margin{
+    margin-left:10px;
+    margin-right:10px;
+}
+
+
+#window-parent{
+    display: flex;
+    max-width: 600px;
+    margin:auto;
+}
+
+#narrow {
+    width: 200px;
+   
+    /* Just so it's visible */
+  }
+  #wide {
+    flex: 1;
+    /* Grow to rest of container */
+   
+    /* Just so it's visible */
+  }

@@ -28,8 +28,14 @@ int main(){
     env.write(temp, data, "./outputsite/views/about.html"); 
     data["views"]["about"] = false;
     data["views"]["blog"] = true;
+    temp = env.parse_template("site/views/blogs.html");
+    env.write(temp, data, "./outputsite/views/blogs.html"); 
+
     temp = env.parse_template("site/views/blog.html");
     env.write(temp, data, "./outputsite/views/blog.html"); 
+
+     temp = env.parse_template("site/views/china-2019-page-1.html");
+    env.write(temp, data, "./outputsite/views/china-2019-page-1.html"); 
 
 
     data["views"]["blog"] = false;
@@ -43,6 +49,8 @@ int main(){
 
     temp = env.parse_template("site/views/contact.html");
     env.write(temp, data, "./outputsite/views/contact.html");
+
+
     cout<<"Done generating files"<<endl;
 
    

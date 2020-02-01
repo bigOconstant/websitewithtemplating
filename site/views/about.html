@@ -2,13 +2,21 @@
 <html>
 {% include "header.html" %}
 <body>
+<div class="content">
 {% include "menu.html" %}
 <h1 align="center" style="color:#e0e0e0"> About</h1>
+<div id="window-parent">
+    <div id="wide">
+    <img id="calebme"  src="../assets/me2.png" > 
+    </div>
 
-
-<p style="text-align: center">Hi I'm a Dallas area developer. </p>
-    <img id="calebme" class="center" src="../assets/rest.jpg" > 
-
+    <div id="narrow">
+    <p >Dallas area developer</p>
+    <p >C++ and Rust enthusiast</p>
+    <a href="https://camccar.github.io/Resume/" >Resume</a>
+    </div>
+</div>
+</div>
 {% include "footer.html" %}
 </body>
 </html>
